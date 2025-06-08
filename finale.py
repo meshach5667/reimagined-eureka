@@ -7,7 +7,7 @@ import httpx
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = '8149412827:AAFUJP0BU08nZZ0YoEpOuO53r2ttrdNaPiY'
+TELEGRAM_TOKEN = '8149412827:AAFUJP0BU08nZZ0YoEpOuO53r2ttrdNaPiY'
 
 # Define states for the conversation
 ASK_WALLET_DETAILS = 1
