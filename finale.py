@@ -2,12 +2,13 @@ import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes, ConversationHandler, MessageHandler, filters
 import httpx
+import os
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = '8149412827:AAFUJP0BU08nZZ0YoEpOuO53r2ttrdNaPiY'
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # Define states for the conversation
 ASK_WALLET_DETAILS = 1
